@@ -6,9 +6,9 @@ export class Rol{
     id:string;
     @Column()
     name:string;
-     @Column()
+     @Column({nullable:true})
     image:string;
-     @Column()
+     @Column({ nullable:true})
     route:string;
 
      @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
